@@ -1,2 +1,3 @@
 创建新的分支并出现冲突
 my name is chengmengyuan,i am not happy and happy
+a bug coming ,i shoule solve it and commit it to master
