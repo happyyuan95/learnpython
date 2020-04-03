@@ -1,0 +1,5 @@
+
+2020-04-03 19:26:57,254 this is debug msg
+2020-04-03 19:26:57,254 this is info msg
+2020-04-03 19:26:57,254 this is a warning msg
+2020-04-03 19:26:57,254 this is critical msg
