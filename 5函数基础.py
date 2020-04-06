@@ -43,6 +43,47 @@
 #     return cal(int(n/2))
 # cal(10)
 
-def add(a,b, f):
-    return f(a)+f(b)
-print(add(3,-5,abs))
+# def add(a,b, f):
+#     return f(a)+f(b)
+# print(add(3,-5,abs))
+
+#嵌套函数
+# x=0
+# def grandpa():
+#     x=1
+#     def dad():
+#         x=2
+#         def son():
+#             x=3
+#             print(x)
+#         son()
+#     dad()
+# grandpa()
+
+#装饰器
+import time
+def timer(fun):
+    def dec():
+        start = time.time()
+        fun()
+        end = time.time()
+        print("run time = %d" %(end-start))
+    return dec
+
+@timer
+def test1():
+    time.sleep(2)
+    print("test1")
+
+@timer
+def test2():
+    time.sleep(1)
+    print("test2")
+
+#更改了函数的调用方式
+# dec(test1)
+# dec(test2)
+#test1 = timer(test1)
+test1()
+#test2 = timer(test2)
+test2()
