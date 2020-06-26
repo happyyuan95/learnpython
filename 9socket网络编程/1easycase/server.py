@@ -14,7 +14,7 @@ conn, addr = server.accept()
 print(conn, addr)
 
 
-print("wait recv-----------")
+print("wait recv-----accept需要使用conn对象来收发内容------")
 #接受客户端数据
 recv = conn.recv(1024)
 print("recv client:", recv)
